@@ -1,12 +1,32 @@
 <?xml version='1.0' encoding='UTF-8' ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml"
-      xmlns:h="http://xmlns.jcp.org/jsf/html">
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
   <h:head>
-    <title>Facelet Title</title>
+    <title>Ativa Eventos</title>
   </h:head>
   <h:body>
-    Hello from Facelets
+    <h:form>
+      <p:panel id="basic" header="Login">
+        
+        <p:growl id="growl" showDetail="true" sticky="true"/>
+        
+        <h:panelGrid columns="2" cellpadding="10">
+          <h:outputText value="Email:" />
+          <p:inputText id="email" value="#{usuarioBean.email}" />
+          <h:outputText value="Senha:" />
+          <p:password id="password" value="#{usuarioBean.senha}" />
+        </h:panelGrid>
+        
+        <f:facet name="footer">
+          <p:commandButton id="login" value="Login" actionListener="#{usuarioBean.login()}" update="growl"/>
+          <p:button id="cancel" value="Cancelar"/>
+        </f:facet>
+        
+      </p:panel>
+    </h:form>
   </h:body>
 </html>
 
