@@ -6,6 +6,4 @@ public interface UsuarioDao {
     
     //Metodo para logon no sistema
     Usuario login(String email, String senha);
-    
-    
 }

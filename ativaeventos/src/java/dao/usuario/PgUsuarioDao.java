@@ -21,10 +21,10 @@ public class PgUsuarioDao implements UsuarioDao{
             ResultSet rs = ps.executeQuery();
             
             while(rs.next()){
-                user.setId(rs.getInt("idusuario"));
-                user.setNome(rs.getString("nmusuario"));
-                user.setEmail(email);
-                user.setSenha(senha);
+                user.setIdUsuario(rs.getInt("idusuario"));
+                user.setNmUsuario(rs.getString("nmusuario"));
+                user.setDsEmail(email);
+                user.setDsSenha(senha);
             }
             rs.close();
             ps.close();
