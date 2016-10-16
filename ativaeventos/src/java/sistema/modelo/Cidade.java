@@ -1,4 +1,6 @@
-package modelo;
+package sistema.modelo;
+
+import modelo.*;
 
 public class Cidade {
     private int idCidade;

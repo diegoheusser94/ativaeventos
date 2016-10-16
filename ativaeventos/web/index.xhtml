@@ -15,7 +15,7 @@
         
         <h:panelGrid columns="2" cellpadding="10">
           <h:outputText value="Email:" />
-          <p:inputText id="email" value="#{usuarioBean.email}" />
+          <p:inputText id="email" onfocus="true" value="#{usuarioBean.email}" />
           <h:outputText value="Senha:" />
           <p:password id="password" value="#{usuarioBean.senha}" />
         </h:panelGrid>

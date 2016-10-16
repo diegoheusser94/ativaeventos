@@ -6,7 +6,7 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
-import modelo.Usuario;
+import sistema.modelo.Usuario;
 
 public class PgUsuarioDao implements UsuarioDao{
 
@@ -32,7 +32,6 @@ public class PgUsuarioDao implements UsuarioDao{
         } catch (SQLException ex) {
             Logger.getLogger(PgUsuarioDao.class.getName()).log(Level.SEVERE, null, ex);
         }
-        
         return user;
     }
 

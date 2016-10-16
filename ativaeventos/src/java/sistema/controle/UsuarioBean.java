@@ -1,4 +1,4 @@
-package controle;
+package sistema.controle;
 
 import javax.faces.application.FacesMessage;
 import javax.faces.bean.ManagedBean;

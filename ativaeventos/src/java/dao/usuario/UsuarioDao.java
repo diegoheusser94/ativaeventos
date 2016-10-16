@@ -1,9 +1,9 @@
 package dao.usuario;
 
-import modelo.Usuario;
+import sistema.modelo.Usuario;
 
 public interface UsuarioDao {
     
-    //Metodo para logon no sistema
+    //Metodo para login no sistema
     Usuario login(String email, String senha);
 }
